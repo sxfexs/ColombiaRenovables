@@ -260,7 +260,7 @@
     container_width: "300px",
     group_maxHeight: "85px",
     exclusive: false,
-    collapsed: false,
+    collapsed: true,
     position: "topright"
   };
 
