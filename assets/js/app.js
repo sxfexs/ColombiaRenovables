@@ -258,7 +258,7 @@
 
   const layerControlOptions = {
     container_width: "300px",
-    group_maxHeight: "80px",
+    group_maxHeight: "85px",
     exclusive: false,
     collapsed: false,
     position: "topright"
