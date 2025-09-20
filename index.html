@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mapa Interactivo con Leaflet</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/styledLayerControl.css"/>
+  <script src="./assets/js/styledLayerControl.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-measure@3.3.0/dist/leaflet-measure.min.js"></script>
+
+<body>
+  <!-- Barra superior -->s
+  <div class="header">
+    Visor para desarollo Energias Renovables Colombia -- por Sandra De Fex
+  </div>
+
+  <div class="main">
+    <!-- Barra lateral -->
+  <div class="sidebar">
+    <h3>Usa el panel de capas para activar y desactivar información.</h3>
+    
+
+    <!-- una sola caja dinámica -->
+    <div id="sidebar-info"></div>
+  </div>
+
+
+
+    <!-- Mapa -->
+    <div id="map"></div>
+  </div>
+</body>
+  <script src="./assets/js/app.js"></script>
+</html>

@@ -1,0 +1,208 @@
+:root {
+  --primary: #0b3d91;
+  --secondary: #2c7fb8;
+  --accent: #fdae61;
+  --background: #f7f9fb;
+  --text: #1f2933;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header,
+.app-footer {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.app-footer small {
+  font-size: 0.85rem;
+}
+
+.app-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(320px, 1fr);
+  gap: 1rem;
+  padding: 1rem 1.5rem 2rem;
+}
+
+.map-panel {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px -20px rgba(11, 61, 145, 0.35);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-height: 620px;
+}
+
+.info-panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 28px -18px rgba(31, 41, 51, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-panel h2,
+.info-panel h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.layer-status ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.layer-status li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  border-left: 4px solid var(--secondary);
+  padding-left: 0.75rem;
+}
+
+.layer-status .status-icon {
+  font-size: 1rem;
+}
+
+.help ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.help li {
+  line-height: 1.5;
+}
+
+.leaflet-container a {
+  color: var(--primary);
+}
+
+@media (max-width: 960px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .info-panel {
+    order: -1;
+  }
+
+  #map {
+    min-height: 480px;
+  }
+}
+
+.popup-content {
+  font-size: 0.9rem;
+}
+
+.popup-content h3 {
+  margin: 0 0 0.25rem;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.popup-content h4 {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.popup-content ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.popup-content li {
+  margin-bottom: 0.35rem;
+}
+
+.leaflet-control-north {
+  margin-bottom: 40px; /* distancia respecto a la escala */
+  text-align: center;
+}
+
+.leaflet-control-north img {
+  width: 24px;   /* ancho fijo */
+  height: auto;  /* mantiene la proporción */
+  opacity: 0.9;  /* opcional: un poco de transparencia */
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* evita scroll */
+}
+
+/* Header */
+.header {
+  height: 50px;
+  background: #2E7D32;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Contenedor principal en fila */
+.main {
+  display: flex;
+  height: calc(100% - 50px); /* resta la altura del header */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #b5e3ef;
+  border-right: 1px solid #a3c4c7;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Mapa ocupa el resto */
+#map {
+  flex: 1;          /* se expande para ocupar todo el espacio restante */
+  height: 100%;
+}

@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "name": "areas_protegidas",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Parque Nacional Natural Amacayacu",
+        "categoria": "Parque Nacional",
+        "fuente": "Parques Nacionales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-70.25, -3.8],
+            [-69.6, -3.8],
+            [-69.6, -3.2],
+            [-70.25, -3.2],
+            [-70.25, -3.8]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Santuario de Flora y Fauna Otún Quimbaya",
+        "categoria": "Santuario de Flora y Fauna",
+        "fuente": "Parques Nacionales"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-75.6, 4.6],
+            [-75.45, 4.6],
+            [-75.45, 4.8],
+            [-75.6, 4.8],
+            [-75.6, 4.6]
+          ]
+        ]
+      }
+    }
+  ]
+}

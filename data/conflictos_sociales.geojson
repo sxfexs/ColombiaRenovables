@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "name": "conflictos_sociales",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Zona de consulta previa",
+        "tipo_conflicto": "Comunidades indígenas",
+        "estado": "En diálogo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-73.9, 2.3],
+            [-73.4, 2.3],
+            [-73.4, 2.8],
+            [-73.9, 2.8],
+            [-73.9, 2.3]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nombre": "Área con conflictos socioambientales",
+        "tipo_conflicto": "Reasentamiento",
+        "estado": "Seguimiento"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-74.8, 9.3],
+            [-74.3, 9.3],
+            [-74.3, 9.7],
+            [-74.8, 9.7],
+            [-74.8, 9.3]
+          ]
+        ]
+      }
+    }
+  ]
+}
